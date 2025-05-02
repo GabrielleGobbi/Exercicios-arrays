@@ -6,8 +6,7 @@ function contarNotasNaFaixa(vector:number[] ,average:number)  :  string  {
     const tenPercent = average * 0.1;  
     const belowAverage = average - tenPercent;
     const aboveAverage = average + tenPercent;
-    for(let i=0;i<50;i++ ) //percorrer o vetor
-        //se o valor do vetor estiver entre 10% abaixo e 10% acima da média
+    for(let i=0;i<50;i++ ) 
         if(vector[i]>=belowAverage && vector[i]<=aboveAverage){
             vectorTwo.push(vector[i]);
             

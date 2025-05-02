@@ -29,6 +29,6 @@ function calcularLucros( vectorProduct : Product[] ) : number[] {
       
   }
   
-  return [profitBelowTen.length,profitBetweenTenAndThirty.length,profitAboveThirty.length]; //retorna o tamanho dos vetores
+  return [profitBelowTen.length,profitBetweenTenAndThirty.length,profitAboveThirty.length]; 
   
 }
