@@ -14,7 +14,7 @@ function gerarRelatorioVendas(): void {
     let bestSellingProduct = "";
     let maxAmount = 0;
 
-    for(let i=0; i<3;i++){
+    for(let i=0; i<10;i++){
         console.log("Digite o código do produto:");
         const cod=readlineSync.question();
         console.log("Digite o preço unitário:");
