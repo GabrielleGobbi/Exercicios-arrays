@@ -9,12 +9,15 @@ function gerarVetorParesDobroImparesTriplo(numberList:number[]) :number [] {
             numberListUpdate[i]=numberList[i] *2;//queremos pegar o valor que esta no indice i e multiplicar por 2
         }
         else{ // se não for par , ele é impar , para um numero ser impar ele quando dividido por 2 vai ter resto , por exemplo numeros primos como o 7 e 13 são impar 
-            numberListUpdate[i]=numberList[i]* //
+            numberListUpdate[i]=numberList[i]*3 //
         }
 
     }
     return numberListUpdate ;
 }
+module.exports=gerarVetorParesDobroImparesTriplo;
+
+console.log(gerarVetorParesDobroImparesTriplo([1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24,25,26,27,28,29,30]) )
 /**O problema:
 
 Implemente um método que leia um vetor de 30 números inteiros e gere um segundo vetor. As posições pares devem ser o dobro do vetor original, e as ímpares, o triplo.
