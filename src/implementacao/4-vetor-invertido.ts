@@ -5,7 +5,7 @@ function inverterVetor( vectorNumber : number[]) : number[] {
         throw new Error("O vetor não possui o tamanho pedido que é 30");
     }
     const vectorNumberTwo:number[] = [];
-    for(let i=29;i>=0;i--){
+    for(let i=vectorNumber.length - 1;i>=0;i--){
         vectorNumberTwo.push(vectorNumber[i]);
     }
     return vectorNumberTwo;
