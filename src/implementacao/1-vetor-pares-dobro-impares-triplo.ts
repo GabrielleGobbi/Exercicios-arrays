@@ -1,18 +1,18 @@
 function gerarVetorParesDobroImparesTriplo(numberList:number[]) :number [] {
-    if(numberList[30]!==undefined){
-        throw new Error( "O Array é maior que 30 ");
-    }
-    let numberListUpdate :number[] = [];
+    if (numberList.length !== 30) { 
+        throw new Error("O vetor deve conter exatamente 30 números."); 
+        }
+    let vetorResult :number[] = [];
     for(let i=0; i<30;i++){
         if(i%2===0){
-            numberListUpdate[i]=numberList[i] *2;
+            vetorResult[i]=numberList[i] *2;
         }
         else{ 
-            numberListUpdate[i]=numberList[i]*3 //
+            vetorResult[i]=numberList[i]*3 //
         }
 
     }
-    return numberListUpdate ;
+    return vetorResult ;
 }
 module.exports=gerarVetorParesDobroImparesTriplo;
 
